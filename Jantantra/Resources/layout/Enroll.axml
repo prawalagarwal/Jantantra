@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_alignBaseline="@+id/editText1"
+        android:layout_marginLeft="5dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:inputType="textPersonName" />
+    <TextView
+        android:text="Email"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignBaseline="@+id/editText2"
+        android:layout_marginLeft="5dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editText1"
+        android:layout_toRightOf="@+id/textView2"
+        android:inputType="textEmailAddress" />
+    <TextView
+        android:text="Mobile"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignBaseline="@+id/editText3"
+        android:layout_marginLeft="5dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editText2"
+        android:layout_toRightOf="@+id/textView3"
+        android:inputType="phone" />
+    <TextView
+        android:text="State"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignBaseline="@+id/editText4"
+        android:layout_marginLeft="5dp" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editText3"
+        android:layout_toRightOf="@+id/textView4" />
+    <TextView
+        android:text="City"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignBaseline="@+id/editText5"
+        android:layout_marginLeft="5dp" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText5"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editText4"
+        android:layout_toRightOf="@+id/textView5" />
+    <TextView
+        android:text="Constituency"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignBaseline="@+id/editText6"
+        android:layout_marginLeft="5dp" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText6"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editText5"
+        android:layout_toRightOf="@+id/textView6" />
+    <TextView
+        android:text="Aadhar Num"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignBaseline="@+id/editText7"
+        android:layout_marginLeft="5dp" />
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText7"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editText6"
+        android:layout_toRightOf="@+id/textView7"
+        android:inputType="number" />
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/verifyAadhar"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editText6"
+        android:layout_toRightOf="@+id/editText7"
+        android:layout_alignBaseline="@+id/editText7"
+        android:layout_marginLeft="5dp"
+        android:text="Verify" />
+    <TextView
+        android:text="Captcha"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_marginTop="10dp"
+        android:layout_alignBaseline="@+id/editText8"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/captchaImage" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText8"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/captchaImage"
+        android:layout_toRightOf="@+id/textView8" />
+    <ImageView
+        android:src="@drawable/captcha"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/editText7"
+        android:id="@+id/captchaImage"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

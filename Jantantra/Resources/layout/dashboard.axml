@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="20">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="3">
+        <Button
+            android:layout_height="fill_parent"
+            android:id="@+id/consButton"
+            android:text="Constituency"
+            android:layout_weight="1"
+            android:layout_width="wrap_content" />
+        <Button
+            android:layout_height="fill_parent"
+            android:id="@+id/cityButton"
+            android:text="City"
+            android:layout_weight="1"
+            android:layout_width="wrap_content" />
+        <Button
+            android:layout_height="fill_parent"
+            android:id="@+id/stateButton"
+            android:text="State"
+            android:layout_weight="1"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="18">
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.gms.maps.MapFragment" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="3">
+        <Button
+            android:layout_height="fill_parent"
+            android:id="@+id/issuesButton"
+            android:text="Issues"
+            android:layout_weight="1"
+            android:layout_width="wrap_content" />
+        <Button
+            android:layout_height="fill_parent"
+            android:id="@+id/policiesButton"
+            android:text="Policies"
+            android:layout_weight="1"
+            android:layout_width="wrap_content" />
+      <Button
+            android:layout_height="fill_parent"
+            android:id="@+id/leadersButton"
+            android:text="Leaders"
+            android:layout_weight="1"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
